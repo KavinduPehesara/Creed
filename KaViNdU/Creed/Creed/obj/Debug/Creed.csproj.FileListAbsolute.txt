@@ -1,0 +1,10 @@
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Creed.exe.config
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Creed.exe
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Creed.pdb
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.csproj.AssemblyReference.cache
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.Properties.Resources.resources
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.csproj.GenerateResource.cache
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.csproj.CoreCompileInputs.cache
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.exe
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.pdb
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.Creed.resources
