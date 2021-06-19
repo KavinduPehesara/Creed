@@ -43,3 +43,4 @@ C:\Users\Kavin\Desktop\Creed\Pramod\Secondform\Secondform\bin\Debug\net5.0-windo
 C:\Users\Kavin\Desktop\Creed\Pramod\Secondform\Secondform\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Kavin\Desktop\Creed\Pramod\Secondform\Secondform\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Kavin\Desktop\Creed\Pramod\Secondform\Secondform\obj\Debug\net5.0-windows\Secondform.csproj.CopyComplete
+C:\Users\Kavin\Desktop\Creed\Pramod\Secondform\Secondform\obj\Debug\net5.0-windows\Secondform.Properties.Resources.resources
