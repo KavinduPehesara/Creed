@@ -8,19 +8,19 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Pramod\\.nuget\\packages\\": {}
+    "C:\\Users\\Kavin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\New folder (2)\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj",
+      "projectUniqueName": "C:\\Users\\Kavin\\Desktop\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj",
       "projectName": "Thirdform",
-      "projectPath": "F:\\New folder (2)\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj",
-      "packagesPath": "C:\\Users\\Pramod\\.nuget\\packages\\",
-      "outputPath": "F:\\New folder (2)\\Pramod\\Thirdform\\Thirdform\\obj\\",
+      "projectPath": "C:\\Users\\Kavin\\Desktop\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj",
+      "packagesPath": "C:\\Users\\Kavin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kavin\\Desktop\\Creed\\Pramod\\Thirdform\\Thirdform\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pramod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kavin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
