@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Secondform
 {
     public partial class Form1 : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Kavin\Desktop\Creed\Pramod\Creed.mdf;Integrated Security=True;Connect Timeout=30");
+        
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +22,7 @@ namespace Secondform
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            display_data();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -34,12 +37,53 @@ namespace Secondform
 
         private void BtnSSave_Click(object sender, EventArgs e)
         {
+            int STDID = int.Parse(TxtSIndex.Text);
+            string STDname = (TxtSName.Text);
+            DateTime DAT = DateTime.Parse(SDOB.Text);
 
+
+            string qur = "INSERT INTO StudentDB VALUES (" + STDID + ",' " + STDname + " ' , ' " + DAT + " ' , ' " + STDname + " ' )";
+            SqlCommand cmd = new SqlCommand(qur, con);
+
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Data Insert Successfully");
+            }
+            catch (SqlException se)
+            {
+                MessageBox.Show(se.ToString());
+            }
+            finally
+            {
+                con.Close();
+                display_data();
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        public void display_data()
+        {
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from StudentDB";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+            con.Close();
         }
     }
 }

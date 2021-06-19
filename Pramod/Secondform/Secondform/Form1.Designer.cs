@@ -40,35 +40,37 @@ namespace Secondform
             this.BtnSClear = new System.Windows.Forms.Button();
             this.BtnSDelete = new System.Windows.Forms.Button();
             this.BtnSFind = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(37, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 24);
+            this.label1.Size = new System.Drawing.Size(115, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Student Index";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(37, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 24);
+            this.label2.Size = new System.Drawing.Size(117, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Student Name";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(37, 167);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 24);
+            this.label4.Size = new System.Drawing.Size(109, 19);
             this.label4.TabIndex = 3;
             this.label4.Text = "Student DOB";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -77,26 +79,28 @@ namespace Secondform
             // 
             this.TxtSIndex.Location = new System.Drawing.Point(196, 49);
             this.TxtSIndex.Name = "TxtSIndex";
-            this.TxtSIndex.Size = new System.Drawing.Size(239, 29);
+            this.TxtSIndex.Size = new System.Drawing.Size(374, 29);
             this.TxtSIndex.TabIndex = 4;
             // 
             // TxtSName
             // 
             this.TxtSName.Location = new System.Drawing.Point(196, 104);
             this.TxtSName.Name = "TxtSName";
-            this.TxtSName.Size = new System.Drawing.Size(239, 29);
+            this.TxtSName.Size = new System.Drawing.Size(374, 29);
             this.TxtSName.TabIndex = 7;
             // 
             // SDOB
             // 
+            this.SDOB.CustomFormat = "dd,mm,yyyy";
+            this.SDOB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.SDOB.Location = new System.Drawing.Point(196, 163);
             this.SDOB.Name = "SDOB";
-            this.SDOB.Size = new System.Drawing.Size(239, 29);
+            this.SDOB.Size = new System.Drawing.Size(255, 29);
             this.SDOB.TabIndex = 8;
             // 
             // BtnSSave
             // 
-            this.BtnSSave.Location = new System.Drawing.Point(196, 255);
+            this.BtnSSave.Location = new System.Drawing.Point(495, 160);
             this.BtnSSave.Name = "BtnSSave";
             this.BtnSSave.Size = new System.Drawing.Size(75, 32);
             this.BtnSSave.TabIndex = 9;
@@ -106,7 +110,7 @@ namespace Secondform
             // 
             // BtnSUpdate
             // 
-            this.BtnSUpdate.Location = new System.Drawing.Point(539, 46);
+            this.BtnSUpdate.Location = new System.Drawing.Point(691, 41);
             this.BtnSUpdate.Name = "BtnSUpdate";
             this.BtnSUpdate.Size = new System.Drawing.Size(75, 32);
             this.BtnSUpdate.TabIndex = 10;
@@ -116,7 +120,7 @@ namespace Secondform
             // 
             // BtnSClear
             // 
-            this.BtnSClear.Location = new System.Drawing.Point(277, 255);
+            this.BtnSClear.Location = new System.Drawing.Point(691, 101);
             this.BtnSClear.Name = "BtnSClear";
             this.BtnSClear.Size = new System.Drawing.Size(75, 32);
             this.BtnSClear.TabIndex = 11;
@@ -125,7 +129,7 @@ namespace Secondform
             // 
             // BtnSDelete
             // 
-            this.BtnSDelete.Location = new System.Drawing.Point(358, 255);
+            this.BtnSDelete.Location = new System.Drawing.Point(597, 101);
             this.BtnSDelete.Name = "BtnSDelete";
             this.BtnSDelete.Size = new System.Drawing.Size(75, 32);
             this.BtnSDelete.TabIndex = 12;
@@ -134,18 +138,30 @@ namespace Secondform
             // 
             // BtnSFind
             // 
-            this.BtnSFind.Location = new System.Drawing.Point(458, 46);
+            this.BtnSFind.Location = new System.Drawing.Point(597, 41);
             this.BtnSFind.Name = "BtnSFind";
             this.BtnSFind.Size = new System.Drawing.Size(75, 32);
             this.BtnSFind.TabIndex = 13;
             this.BtnSFind.Text = "Find";
             this.BtnSFind.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(37, 230);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(729, 228);
+            this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.MintCream;
+            this.ClientSize = new System.Drawing.Size(813, 490);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BtnSFind);
             this.Controls.Add(this.BtnSDelete);
             this.Controls.Add(this.BtnSClear);
@@ -159,8 +175,9 @@ namespace Secondform
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Student Data Entry";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,6 +196,7 @@ namespace Secondform
         private System.Windows.Forms.Button BtnSClear;
         private System.Windows.Forms.Button BtnSDelete;
         private System.Windows.Forms.Button BtnSFind;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
