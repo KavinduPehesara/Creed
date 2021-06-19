@@ -41,6 +41,7 @@ namespace Secondform
             this.BtnSDelete = new System.Windows.Forms.Button();
             this.BtnSFind = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.House = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,9 +101,9 @@ namespace Secondform
             // 
             // BtnSSave
             // 
-            this.BtnSSave.Location = new System.Drawing.Point(495, 160);
+            this.BtnSSave.Location = new System.Drawing.Point(492, 160);
             this.BtnSSave.Name = "BtnSSave";
-            this.BtnSSave.Size = new System.Drawing.Size(75, 32);
+            this.BtnSSave.Size = new System.Drawing.Size(78, 31);
             this.BtnSSave.TabIndex = 9;
             this.BtnSSave.Text = "Save";
             this.BtnSSave.UseVisualStyleBackColor = true;
@@ -112,7 +113,7 @@ namespace Secondform
             // 
             this.BtnSUpdate.Location = new System.Drawing.Point(691, 41);
             this.BtnSUpdate.Name = "BtnSUpdate";
-            this.BtnSUpdate.Size = new System.Drawing.Size(75, 32);
+            this.BtnSUpdate.Size = new System.Drawing.Size(75, 31);
             this.BtnSUpdate.TabIndex = 10;
             this.BtnSUpdate.Text = "Update";
             this.BtnSUpdate.UseVisualStyleBackColor = true;
@@ -122,7 +123,7 @@ namespace Secondform
             // 
             this.BtnSClear.Location = new System.Drawing.Point(691, 101);
             this.BtnSClear.Name = "BtnSClear";
-            this.BtnSClear.Size = new System.Drawing.Size(75, 32);
+            this.BtnSClear.Size = new System.Drawing.Size(75, 31);
             this.BtnSClear.TabIndex = 11;
             this.BtnSClear.Text = "Clear";
             this.BtnSClear.UseVisualStyleBackColor = true;
@@ -131,16 +132,17 @@ namespace Secondform
             // 
             this.BtnSDelete.Location = new System.Drawing.Point(597, 101);
             this.BtnSDelete.Name = "BtnSDelete";
-            this.BtnSDelete.Size = new System.Drawing.Size(75, 32);
+            this.BtnSDelete.Size = new System.Drawing.Size(75, 31);
             this.BtnSDelete.TabIndex = 12;
             this.BtnSDelete.Text = "Delete";
             this.BtnSDelete.UseVisualStyleBackColor = true;
+            this.BtnSDelete.Click += new System.EventHandler(this.BtnSDelete_Click);
             // 
             // BtnSFind
             // 
             this.BtnSFind.Location = new System.Drawing.Point(597, 41);
             this.BtnSFind.Name = "BtnSFind";
-            this.BtnSFind.Size = new System.Drawing.Size(75, 32);
+            this.BtnSFind.Size = new System.Drawing.Size(75, 31);
             this.BtnSFind.TabIndex = 13;
             this.BtnSFind.Text = "Find";
             this.BtnSFind.UseVisualStyleBackColor = true;
@@ -148,19 +150,30 @@ namespace Secondform
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 230);
+            this.dataGridView1.Location = new System.Drawing.Point(37, 216);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(729, 228);
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // House
+            // 
+            this.House.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.House.Location = new System.Drawing.Point(597, 160);
+            this.House.Name = "House";
+            this.House.Size = new System.Drawing.Size(169, 29);
+            this.House.TabIndex = 15;
+            this.House.Text = "Dont Fill";
+            this.House.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(813, 490);
+            this.ClientSize = new System.Drawing.Size(813, 477);
+            this.Controls.Add(this.House);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BtnSFind);
             this.Controls.Add(this.BtnSDelete);
@@ -197,6 +210,7 @@ namespace Secondform
         private System.Windows.Forms.Button BtnSDelete;
         private System.Windows.Forms.Button BtnSFind;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox House;
     }
 }
 

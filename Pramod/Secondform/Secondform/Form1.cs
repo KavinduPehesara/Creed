@@ -40,9 +40,27 @@ namespace Secondform
             int STDID = int.Parse(TxtSIndex.Text);
             string STDname = (TxtSName.Text);
             DateTime DAT = DateTime.Parse(SDOB.Text);
+            string Housename;
+
+            if (0 == STDID % 4)
+            {
+                Housename = "Ruby" ;
+            }
+            else if (1 == STDID % 4)
+            {
+                Housename = "Sapphare" ;
+            }
+            else if (2 == STDID % 4)
+            {
+                Housename = "Citric" ;
+            }
+            else
+            {
+                Housename = "Emerald";
+            }
 
 
-            string qur = "INSERT INTO StudentDB VALUES (" + STDID + ",' " + STDname + " ' , ' " + DAT + " ' , ' " + STDname + " ' )";
+            string qur = "INSERT INTO StudentDB VALUES (" + STDID + ",' " + STDname + " ' , ' " + DAT + " ' , ' " + Housename + " ' )";
             SqlCommand cmd = new SqlCommand(qur, con);
 
             try
@@ -84,6 +102,29 @@ namespace Secondform
             dataGridView1.DataSource = dt;
 
             con.Close();
+        }
+
+        private void BtnSDelete_Click(object sender, EventArgs e)
+        {
+            int STDID = int.Parse(TxtSIndex.Text);
+            string qur = " delete from StudentDB where StudentIndex =" + STDID + "";
+            SqlCommand cm = new SqlCommand(qur, con);
+
+            try
+            {
+                con.Open();
+                cm.ExecuteNonQuery();
+                MessageBox.Show("Data Deleted Successfully");
+            }
+            catch (SqlException se)
+            {
+                MessageBox.Show(se.ToString());
+            }
+            finally
+            {
+                con.Close();
+                display_data();
+            }
         }
     }
 }
