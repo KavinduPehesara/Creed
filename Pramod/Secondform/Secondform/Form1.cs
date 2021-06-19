@@ -32,7 +32,48 @@ namespace Secondform
 
         private void button2_Click(object sender, EventArgs e)
         {
+            int STDID = int.Parse(TxtSIndex.Text);
+            string STDname = (TxtSName.Text);
+            DateTime DAT = DateTime.Parse(SDOB.Text);
+            string Housename;
 
+            if (0 == STDID % 4)
+            {
+                Housename = "Ruby";
+            }
+            else if (1 == STDID % 4)
+            {
+                Housename = "Sapphare";
+            }
+            else if (2 == STDID % 4)
+            {
+                Housename = "Citric";
+            }
+            else
+            {
+                Housename = "Emerald";
+            }
+
+
+            string qur = " UPDATE StudentDB SET StudentIndex =  " + STDID + " ,StudentName = ' " + STDname + " ' ,StudentDOB = ' " + DAT + " ',Houses = ' " + Housename + " ' WHERE StudentIndex = " + STDID + "";
+            SqlCommand cmd = new SqlCommand(qur, con);
+
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Data Updated Successfully");
+            }
+            catch (SqlException se)
+            {
+                MessageBox.Show(se.ToString());
+            }
+            finally
+            {
+                con.Close();
+                display_data();
+
+            }
         }
 
         private void BtnSSave_Click(object sender, EventArgs e)
@@ -125,6 +166,46 @@ namespace Secondform
                 con.Close();
                 display_data();
             }
+        }
+
+        private void BtnSFind_Click(object sender, EventArgs e)
+        {
+            int STDID = int.Parse(TxtSIndex.Text);
+            string qur = "SELECT * FROM StudentDB WHERE StudentIndex = " + STDID + "";
+            SqlCommand cmd = new SqlCommand(qur, con);
+
+            try
+            {
+                con.Open();
+                SqlDataReader rd = cmd.ExecuteReader();
+                while (rd.Read())
+                {
+                    TxtSIndex.Text = rd[0].ToString();
+                    TxtSName.Text = rd[1].ToString();
+                    SDOB.Text = rd[2].ToString();
+                    House.Text = rd[3].ToString();
+                }
+                MessageBox.Show("Data Find Successfully");
+
+            }
+            catch (SqlException se)
+            {
+                MessageBox.Show(se.ToString());
+            }
+            finally
+            {
+                con.Close();
+                display_data();
+            }
+
+        }
+
+        private void BtnSClear_Click(object sender, EventArgs e)
+        {
+            TxtSIndex.Text = "";
+            TxtSName.Text = "";
+            SDOB.Text = "";
+            House.Text = "";
         }
     }
 }

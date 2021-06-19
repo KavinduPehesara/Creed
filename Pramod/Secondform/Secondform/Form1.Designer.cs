@@ -29,6 +29,7 @@ namespace Secondform
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@ namespace Secondform
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(37, 49);
             this.label1.Name = "label1";
@@ -58,6 +60,7 @@ namespace Secondform
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(37, 109);
             this.label2.Name = "label2";
@@ -68,6 +71,7 @@ namespace Secondform
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(37, 167);
             this.label4.Name = "label4";
@@ -80,14 +84,14 @@ namespace Secondform
             // 
             this.TxtSIndex.Location = new System.Drawing.Point(196, 49);
             this.TxtSIndex.Name = "TxtSIndex";
-            this.TxtSIndex.Size = new System.Drawing.Size(374, 29);
+            this.TxtSIndex.Size = new System.Drawing.Size(255, 29);
             this.TxtSIndex.TabIndex = 4;
             // 
             // TxtSName
             // 
             this.TxtSName.Location = new System.Drawing.Point(196, 104);
             this.TxtSName.Name = "TxtSName";
-            this.TxtSName.Size = new System.Drawing.Size(374, 29);
+            this.TxtSName.Size = new System.Drawing.Size(255, 29);
             this.TxtSName.TabIndex = 7;
             // 
             // SDOB
@@ -101,9 +105,9 @@ namespace Secondform
             // 
             // BtnSSave
             // 
-            this.BtnSSave.Location = new System.Drawing.Point(492, 160);
+            this.BtnSSave.Location = new System.Drawing.Point(196, 219);
             this.BtnSSave.Name = "BtnSSave";
-            this.BtnSSave.Size = new System.Drawing.Size(78, 31);
+            this.BtnSSave.Size = new System.Drawing.Size(162, 31);
             this.BtnSSave.TabIndex = 9;
             this.BtnSSave.Text = "Save";
             this.BtnSSave.UseVisualStyleBackColor = true;
@@ -111,9 +115,9 @@ namespace Secondform
             // 
             // BtnSUpdate
             // 
-            this.BtnSUpdate.Location = new System.Drawing.Point(691, 41);
+            this.BtnSUpdate.Location = new System.Drawing.Point(389, 219);
             this.BtnSUpdate.Name = "BtnSUpdate";
-            this.BtnSUpdate.Size = new System.Drawing.Size(75, 31);
+            this.BtnSUpdate.Size = new System.Drawing.Size(171, 31);
             this.BtnSUpdate.TabIndex = 10;
             this.BtnSUpdate.Text = "Update";
             this.BtnSUpdate.UseVisualStyleBackColor = true;
@@ -121,16 +125,18 @@ namespace Secondform
             // 
             // BtnSClear
             // 
-            this.BtnSClear.Location = new System.Drawing.Point(691, 101);
+            this.BtnSClear.FlatAppearance.BorderSize = 0;
+            this.BtnSClear.Location = new System.Drawing.Point(485, 49);
             this.BtnSClear.Name = "BtnSClear";
             this.BtnSClear.Size = new System.Drawing.Size(75, 31);
             this.BtnSClear.TabIndex = 11;
             this.BtnSClear.Text = "Clear";
             this.BtnSClear.UseVisualStyleBackColor = true;
+            this.BtnSClear.Click += new System.EventHandler(this.BtnSClear_Click);
             // 
             // BtnSDelete
             // 
-            this.BtnSDelete.Location = new System.Drawing.Point(597, 101);
+            this.BtnSDelete.Location = new System.Drawing.Point(485, 163);
             this.BtnSDelete.Name = "BtnSDelete";
             this.BtnSDelete.Size = new System.Drawing.Size(75, 31);
             this.BtnSDelete.TabIndex = 12;
@@ -140,39 +146,56 @@ namespace Secondform
             // 
             // BtnSFind
             // 
-            this.BtnSFind.Location = new System.Drawing.Point(597, 41);
+            this.BtnSFind.Location = new System.Drawing.Point(485, 104);
             this.BtnSFind.Name = "BtnSFind";
             this.BtnSFind.Size = new System.Drawing.Size(75, 31);
             this.BtnSFind.TabIndex = 13;
             this.BtnSFind.Text = "Find";
             this.BtnSFind.UseVisualStyleBackColor = true;
+            this.BtnSFind.Click += new System.EventHandler(this.BtnSFind_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 216);
+            this.dataGridView1.Location = new System.Drawing.Point(37, 275);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(729, 228);
+            this.dataGridView1.Size = new System.Drawing.Size(523, 126);
             this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.VirtualMode = true;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // House
             // 
+            this.House.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.House.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.House.Location = new System.Drawing.Point(597, 160);
+            this.House.Cursor = System.Windows.Forms.Cursors.Default;
+            this.House.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.House.Location = new System.Drawing.Point(37, 219);
             this.House.Name = "House";
-            this.House.Size = new System.Drawing.Size(169, 29);
+            this.House.ReadOnly = true;
+            this.House.Size = new System.Drawing.Size(117, 29);
             this.House.TabIndex = 15;
-            this.House.Text = "Dont Fill";
+            this.House.Text = "House";
             this.House.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.House.WordWrap = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(813, 477);
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(592, 447);
             this.Controls.Add(this.House);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BtnSFind);
