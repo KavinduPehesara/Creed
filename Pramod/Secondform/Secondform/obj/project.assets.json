@@ -1783,11 +1783,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\New folder\\creed\\Pramod\\Secondform\\Secondform\\Secondform.csproj",
+      "projectUniqueName": "F:\\C# Project\\Creed\\Pramod\\Secondform\\Secondform\\Secondform.csproj",
       "projectName": "Secondform",
-      "projectPath": "F:\\New folder\\creed\\Pramod\\Secondform\\Secondform\\Secondform.csproj",
+      "projectPath": "F:\\C# Project\\Creed\\Pramod\\Secondform\\Secondform\\Secondform.csproj",
       "packagesPath": "C:\\Users\\Pramod\\.nuget\\packages\\",
-      "outputPath": "F:\\New folder\\creed\\Pramod\\Secondform\\Secondform\\obj\\",
+      "outputPath": "F:\\C# Project\\Creed\\Pramod\\Secondform\\Secondform\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pramod\\AppData\\Roaming\\NuGet\\NuGet.Config",

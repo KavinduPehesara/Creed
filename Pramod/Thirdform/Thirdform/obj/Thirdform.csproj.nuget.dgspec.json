@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\New folder\\creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj": {}
+    "F:\\C# Project\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj": {}
   },
   "projects": {
-    "F:\\New folder\\creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj": {
+    "F:\\C# Project\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\New folder\\creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj",
+        "projectUniqueName": "F:\\C# Project\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj",
         "projectName": "Thirdform",
-        "projectPath": "F:\\New folder\\creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj",
+        "projectPath": "F:\\C# Project\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj",
         "packagesPath": "C:\\Users\\Pramod\\.nuget\\packages\\",
-        "outputPath": "F:\\New folder\\creed\\Pramod\\Thirdform\\Thirdform\\obj\\",
+        "outputPath": "F:\\C# Project\\Creed\\Pramod\\Thirdform\\Thirdform\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pramod\\AppData\\Roaming\\NuGet\\NuGet.Config",
