@@ -42,7 +42,9 @@ namespace Thirdform
             this.RadioIndividual = new System.Windows.Forms.RadioButton();
             this.RadioTeam = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.SpDOH = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnSpFind
@@ -57,7 +59,7 @@ namespace Thirdform
             // 
             // BtnSpDelete
             // 
-            this.BtnSpDelete.Location = new System.Drawing.Point(369, 290);
+            this.BtnSpDelete.Location = new System.Drawing.Point(481, 100);
             this.BtnSpDelete.Name = "BtnSpDelete";
             this.BtnSpDelete.Size = new System.Drawing.Size(75, 32);
             this.BtnSpDelete.TabIndex = 22;
@@ -66,7 +68,7 @@ namespace Thirdform
             // 
             // BtnSpClear
             // 
-            this.BtnSpClear.Location = new System.Drawing.Point(288, 290);
+            this.BtnSpClear.Location = new System.Drawing.Point(562, 100);
             this.BtnSpClear.Name = "BtnSpClear";
             this.BtnSpClear.Size = new System.Drawing.Size(75, 32);
             this.BtnSpClear.TabIndex = 21;
@@ -84,12 +86,13 @@ namespace Thirdform
             // 
             // BtnSpSave
             // 
-            this.BtnSpSave.Location = new System.Drawing.Point(207, 290);
+            this.BtnSpSave.Location = new System.Drawing.Point(481, 216);
             this.BtnSpSave.Name = "BtnSpSave";
             this.BtnSpSave.Size = new System.Drawing.Size(75, 32);
             this.BtnSpSave.TabIndex = 19;
             this.BtnSpSave.Text = "Save";
             this.BtnSpSave.UseVisualStyleBackColor = true;
+            this.BtnSpSave.Click += new System.EventHandler(this.BtnSpSave_Click);
             // 
             // TxtSpName
             // 
@@ -170,19 +173,32 @@ namespace Thirdform
             this.label3.TabIndex = 26;
             this.label3.Text = "Date Of Holding";
             // 
-            // dateTimePicker1
+            // dataGridView1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(207, 219);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(239, 23);
-            this.dateTimePicker1.TabIndex = 27;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(46, 284);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(729, 228);
+            this.dataGridView1.TabIndex = 28;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // SpDOH
+            // 
+            this.SpDOH.CustomFormat = "dd,mm,yyyy";
+            this.SpDOH.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.SpDOH.Location = new System.Drawing.Point(207, 219);
+            this.SpDOH.Name = "SpDOH";
+            this.SpDOH.Size = new System.Drawing.Size(255, 23);
+            this.SpDOH.TabIndex = 29;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.SpDOH);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.RadioTeam);
             this.Controls.Add(this.RadioIndividual);
@@ -198,6 +214,7 @@ namespace Thirdform
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,7 +235,8 @@ namespace Thirdform
         private System.Windows.Forms.RadioButton RadioIndividual;
         private System.Windows.Forms.RadioButton RadioTeam;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DateTimePicker SpDOH;
     }
 }
 

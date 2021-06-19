@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kavin\\Desktop\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj": {}
+    "F:\\C# Project\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kavin\\Desktop\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj": {
+    "F:\\C# Project\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kavin\\Desktop\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj",
+        "projectUniqueName": "F:\\C# Project\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj",
         "projectName": "Thirdform",
-        "projectPath": "C:\\Users\\Kavin\\Desktop\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj",
-        "packagesPath": "C:\\Users\\Kavin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kavin\\Desktop\\Creed\\Pramod\\Thirdform\\Thirdform\\obj\\",
+        "projectPath": "F:\\C# Project\\Creed\\Pramod\\Thirdform\\Thirdform\\Thirdform.csproj",
+        "packagesPath": "C:\\Users\\Pramod\\.nuget\\packages\\",
+        "outputPath": "F:\\C# Project\\Creed\\Pramod\\Thirdform\\Thirdform\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kavin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Pramod\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,16 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
