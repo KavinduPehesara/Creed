@@ -29,6 +29,7 @@ namespace Thirdform
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.BtnSpFind = new System.Windows.Forms.Button();
             this.BtnSpDelete = new System.Windows.Forms.Button();
             this.BtnSpClear = new System.Windows.Forms.Button();
@@ -65,6 +66,7 @@ namespace Thirdform
             this.BtnSpDelete.TabIndex = 22;
             this.BtnSpDelete.Text = "Delete";
             this.BtnSpDelete.UseVisualStyleBackColor = true;
+            this.BtnSpDelete.Click += new System.EventHandler(this.BtnSpDelete_Click);
             // 
             // BtnSpClear
             // 
@@ -74,6 +76,7 @@ namespace Thirdform
             this.BtnSpClear.TabIndex = 21;
             this.BtnSpClear.Text = "Clear";
             this.BtnSpClear.UseVisualStyleBackColor = true;
+            this.BtnSpClear.Click += new System.EventHandler(this.BtnSpClear_Click);
             // 
             // BtnSpUpdate
             // 
@@ -83,6 +86,7 @@ namespace Thirdform
             this.BtnSpUpdate.TabIndex = 20;
             this.BtnSpUpdate.Text = "Update";
             this.BtnSpUpdate.UseVisualStyleBackColor = true;
+            this.BtnSpUpdate.Click += new System.EventHandler(this.BtnSpUpdate_Click);
             // 
             // BtnSpSave
             // 
@@ -112,6 +116,7 @@ namespace Thirdform
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(46, 163);
             this.label4.Name = "label4";
@@ -122,6 +127,7 @@ namespace Thirdform
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(46, 105);
             this.label2.Name = "label2";
@@ -132,16 +138,19 @@ namespace Thirdform
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(46, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 24);
             this.label1.TabIndex = 14;
             this.label1.Text = "Sport Number";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // RadioIndividual
             // 
             this.RadioIndividual.AutoSize = true;
+            this.RadioIndividual.BackColor = System.Drawing.Color.Transparent;
             this.RadioIndividual.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RadioIndividual.Location = new System.Drawing.Point(207, 167);
             this.RadioIndividual.Name = "RadioIndividual";
@@ -149,11 +158,12 @@ namespace Thirdform
             this.RadioIndividual.TabIndex = 24;
             this.RadioIndividual.TabStop = true;
             this.RadioIndividual.Text = "Individual";
-            this.RadioIndividual.UseVisualStyleBackColor = true;
+            this.RadioIndividual.UseVisualStyleBackColor = false;
             // 
             // RadioTeam
             // 
             this.RadioTeam.AutoSize = true;
+            this.RadioTeam.BackColor = System.Drawing.Color.Transparent;
             this.RadioTeam.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RadioTeam.Location = new System.Drawing.Point(313, 167);
             this.RadioTeam.Name = "RadioTeam";
@@ -161,11 +171,12 @@ namespace Thirdform
             this.RadioTeam.TabIndex = 25;
             this.RadioTeam.TabStop = true;
             this.RadioTeam.Text = "Team";
-            this.RadioTeam.UseVisualStyleBackColor = true;
+            this.RadioTeam.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(46, 219);
             this.label3.Name = "label3";
@@ -176,10 +187,10 @@ namespace Thirdform
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 284);
+            this.dataGridView1.Location = new System.Drawing.Point(46, 282);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(729, 228);
+            this.dataGridView1.Size = new System.Drawing.Size(527, 158);
             this.dataGridView1.TabIndex = 28;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -196,7 +207,9 @@ namespace Thirdform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(658, 480);
             this.Controls.Add(this.SpDOH);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
