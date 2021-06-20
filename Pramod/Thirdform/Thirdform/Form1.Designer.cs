@@ -156,7 +156,6 @@ namespace Thirdform
             this.Individual.Name = "Individual";
             this.Individual.Size = new System.Drawing.Size(101, 23);
             this.Individual.TabIndex = 24;
-            this.Individual.TabStop = true;
             this.Individual.Text = "Individual";
             this.Individual.UseVisualStyleBackColor = false;
             // 
@@ -169,7 +168,6 @@ namespace Thirdform
             this.Team.Name = "Team";
             this.Team.Size = new System.Drawing.Size(68, 23);
             this.Team.TabIndex = 25;
-            this.Team.TabStop = true;
             this.Team.Text = "Team";
             this.Team.UseVisualStyleBackColor = false;
             // 
@@ -199,7 +197,7 @@ namespace Thirdform
             this.SpDOH.CustomFormat = "dd,mm,yyyy";
             this.SpDOH.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.SpDOH.Location = new System.Drawing.Point(207, 219);
-            this.SpDOH.MinDate = new System.DateTime(2021, 6, 20, 22, 46, 9, 0);
+            this.SpDOH.MinDate = new System.DateTime(1898, 12, 28, 0, 0, 0, 0);
             this.SpDOH.Name = "SpDOH";
             this.SpDOH.Size = new System.Drawing.Size(299, 23);
             this.SpDOH.TabIndex = 29;
