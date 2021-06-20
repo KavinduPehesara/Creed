@@ -40,8 +40,8 @@ namespace Thirdform
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.RadioIndividual = new System.Windows.Forms.RadioButton();
-            this.RadioTeam = new System.Windows.Forms.RadioButton();
+            this.Individual = new System.Windows.Forms.RadioButton();
+            this.Team = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.SpDOH = new System.Windows.Forms.DateTimePicker();
@@ -50,7 +50,7 @@ namespace Thirdform
             // 
             // BtnSpFind
             // 
-            this.BtnSpFind.Location = new System.Drawing.Point(481, 47);
+            this.BtnSpFind.Location = new System.Drawing.Point(538, 50);
             this.BtnSpFind.Name = "BtnSpFind";
             this.BtnSpFind.Size = new System.Drawing.Size(75, 32);
             this.BtnSpFind.TabIndex = 23;
@@ -60,7 +60,7 @@ namespace Thirdform
             // 
             // BtnSpDelete
             // 
-            this.BtnSpDelete.Location = new System.Drawing.Point(481, 100);
+            this.BtnSpDelete.Location = new System.Drawing.Point(538, 163);
             this.BtnSpDelete.Name = "BtnSpDelete";
             this.BtnSpDelete.Size = new System.Drawing.Size(75, 32);
             this.BtnSpDelete.TabIndex = 22;
@@ -70,7 +70,7 @@ namespace Thirdform
             // 
             // BtnSpClear
             // 
-            this.BtnSpClear.Location = new System.Drawing.Point(562, 100);
+            this.BtnSpClear.Location = new System.Drawing.Point(538, 105);
             this.BtnSpClear.Name = "BtnSpClear";
             this.BtnSpClear.Size = new System.Drawing.Size(75, 32);
             this.BtnSpClear.TabIndex = 21;
@@ -80,7 +80,7 @@ namespace Thirdform
             // 
             // BtnSpUpdate
             // 
-            this.BtnSpUpdate.Location = new System.Drawing.Point(562, 47);
+            this.BtnSpUpdate.Location = new System.Drawing.Point(538, 213);
             this.BtnSpUpdate.Name = "BtnSpUpdate";
             this.BtnSpUpdate.Size = new System.Drawing.Size(75, 32);
             this.BtnSpUpdate.TabIndex = 20;
@@ -90,7 +90,7 @@ namespace Thirdform
             // 
             // BtnSpSave
             // 
-            this.BtnSpSave.Location = new System.Drawing.Point(481, 216);
+            this.BtnSpSave.Location = new System.Drawing.Point(431, 163);
             this.BtnSpSave.Name = "BtnSpSave";
             this.BtnSpSave.Size = new System.Drawing.Size(75, 32);
             this.BtnSpSave.TabIndex = 19;
@@ -102,7 +102,7 @@ namespace Thirdform
             // 
             this.TxtSpName.Location = new System.Drawing.Point(207, 106);
             this.TxtSpName.Name = "TxtSpName";
-            this.TxtSpName.Size = new System.Drawing.Size(239, 23);
+            this.TxtSpName.Size = new System.Drawing.Size(307, 23);
             this.TxtSpName.TabIndex = 18;
             this.TxtSpName.TextChanged += new System.EventHandler(this.TxtSName_TextChanged);
             // 
@@ -110,17 +110,17 @@ namespace Thirdform
             // 
             this.TxtSpNumber.Location = new System.Drawing.Point(207, 50);
             this.TxtSpNumber.Name = "TxtSpNumber";
-            this.TxtSpNumber.Size = new System.Drawing.Size(239, 23);
+            this.TxtSpNumber.Size = new System.Drawing.Size(307, 23);
             this.TxtSpNumber.TabIndex = 17;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(46, 163);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 24);
+            this.label4.Size = new System.Drawing.Size(92, 19);
             this.label4.TabIndex = 16;
             this.label4.Text = "Sport Type";
             // 
@@ -128,10 +128,10 @@ namespace Thirdform
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(46, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 24);
+            this.label2.Size = new System.Drawing.Size(99, 19);
             this.label2.TabIndex = 15;
             this.label2.Text = "Sport Name";
             // 
@@ -139,58 +139,58 @@ namespace Thirdform
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(46, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 24);
+            this.label1.Size = new System.Drawing.Size(116, 19);
             this.label1.TabIndex = 14;
             this.label1.Text = "Sport Number";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // RadioIndividual
+            // Individual
             // 
-            this.RadioIndividual.AutoSize = true;
-            this.RadioIndividual.BackColor = System.Drawing.Color.Transparent;
-            this.RadioIndividual.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.RadioIndividual.Location = new System.Drawing.Point(207, 167);
-            this.RadioIndividual.Name = "RadioIndividual";
-            this.RadioIndividual.Size = new System.Drawing.Size(100, 23);
-            this.RadioIndividual.TabIndex = 24;
-            this.RadioIndividual.TabStop = true;
-            this.RadioIndividual.Text = "Individual";
-            this.RadioIndividual.UseVisualStyleBackColor = false;
+            this.Individual.AutoSize = true;
+            this.Individual.BackColor = System.Drawing.Color.Transparent;
+            this.Individual.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Individual.Location = new System.Drawing.Point(207, 167);
+            this.Individual.Name = "Individual";
+            this.Individual.Size = new System.Drawing.Size(101, 23);
+            this.Individual.TabIndex = 24;
+            this.Individual.TabStop = true;
+            this.Individual.Text = "Individual";
+            this.Individual.UseVisualStyleBackColor = false;
             // 
-            // RadioTeam
+            // Team
             // 
-            this.RadioTeam.AutoSize = true;
-            this.RadioTeam.BackColor = System.Drawing.Color.Transparent;
-            this.RadioTeam.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.RadioTeam.Location = new System.Drawing.Point(313, 167);
-            this.RadioTeam.Name = "RadioTeam";
-            this.RadioTeam.Size = new System.Drawing.Size(64, 23);
-            this.RadioTeam.TabIndex = 25;
-            this.RadioTeam.TabStop = true;
-            this.RadioTeam.Text = "Team";
-            this.RadioTeam.UseVisualStyleBackColor = false;
+            this.Team.AutoSize = true;
+            this.Team.BackColor = System.Drawing.Color.Transparent;
+            this.Team.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Team.Location = new System.Drawing.Point(333, 167);
+            this.Team.Name = "Team";
+            this.Team.Size = new System.Drawing.Size(68, 23);
+            this.Team.TabIndex = 25;
+            this.Team.TabStop = true;
+            this.Team.Text = "Team";
+            this.Team.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(46, 219);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 24);
+            this.label3.Size = new System.Drawing.Size(129, 19);
             this.label3.TabIndex = 26;
             this.label3.Text = "Date Of Holding";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 282);
+            this.dataGridView1.Location = new System.Drawing.Point(46, 288);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(527, 158);
+            this.dataGridView1.Size = new System.Drawing.Size(567, 158);
             this.dataGridView1.TabIndex = 28;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -199,9 +199,11 @@ namespace Thirdform
             this.SpDOH.CustomFormat = "dd,mm,yyyy";
             this.SpDOH.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.SpDOH.Location = new System.Drawing.Point(207, 219);
+            this.SpDOH.MinDate = new System.DateTime(2021, 6, 20, 22, 46, 9, 0);
             this.SpDOH.Name = "SpDOH";
-            this.SpDOH.Size = new System.Drawing.Size(255, 23);
+            this.SpDOH.Size = new System.Drawing.Size(299, 23);
             this.SpDOH.TabIndex = 29;
+            this.SpDOH.Value = new System.DateTime(2021, 6, 20, 22, 46, 9, 0);
             // 
             // Form1
             // 
@@ -213,8 +215,8 @@ namespace Thirdform
             this.Controls.Add(this.SpDOH);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.RadioTeam);
-            this.Controls.Add(this.RadioIndividual);
+            this.Controls.Add(this.Team);
+            this.Controls.Add(this.Individual);
             this.Controls.Add(this.BtnSpFind);
             this.Controls.Add(this.BtnSpDelete);
             this.Controls.Add(this.BtnSpClear);
@@ -227,6 +229,7 @@ namespace Thirdform
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -245,8 +248,8 @@ namespace Thirdform
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton RadioIndividual;
-        private System.Windows.Forms.RadioButton RadioTeam;
+        private System.Windows.Forms.RadioButton Individual;
+        private System.Windows.Forms.RadioButton Team;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DateTimePicker SpDOH;

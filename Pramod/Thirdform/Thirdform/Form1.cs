@@ -15,7 +15,7 @@ namespace Thirdform
 {
     public partial class Form1 : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\C# Project\Creed\Pramod\Creed.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Kavin\Desktop\Creed\Pramod\Creed.mdf;Integrated Security=True;Connect Timeout=30");
         public Form1()
         {
             InitializeComponent();
@@ -61,12 +61,17 @@ namespace Thirdform
         {
             int SpNum = int.Parse(TxtSpNumber.Text);
             string SpName = (TxtSpName.Text);
-            //string SpType = (RadioButton);
-            string gg = "ppp";
             DateTime SpDAT = DateTime.Parse(SpDOH.Text);
-            
 
-            string qur = "INSERT INTO SportDB VALUES (" + SpNum + ",' " + SpName + " ' , '"+gg+"',' " + SpDAT + " ')";
+            string value = "";
+            bool isChecked = Individual.Checked;
+            if (isChecked)
+                value = Individual.Text;
+            else
+                value = Team.Text;
+
+
+            string qur = "INSERT INTO SportDB VALUES (" + SpNum + ",' " + SpName + " ' , '"+value+"',' " + SpDAT + " ')";
             SqlCommand cmd = new SqlCommand(qur, con);
 
             try
@@ -168,6 +173,11 @@ namespace Thirdform
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            display_data();
         }
     }
 }
