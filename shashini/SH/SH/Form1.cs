@@ -8,42 +8,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace creed_login
+namespace SH
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void butLogin_Click(object sender, EventArgs e)
         {
-            string Email = txtEmail.Text;
-            string Password = txtPassword.Text;
+            String Email = txtEmail.Text;
+            String Password = txtPassword.Text;
 
-            if (txtEmail.Text == "Admin" && txtPassword.Text == "A1234")
+            if(txtEmail.Text=="Admin" && txtPassword.Text == "A1234") 
             {
                 MessageBox.Show("Login Success!");
-               
+
             }
 
             else
             {
-                MessageBox.Show("Incorrect Email or Password","Message Box!!!",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Incorrect Email or Password", "Message Box!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
         }
 
         private void butExit_Click(object sender, EventArgs e)
         {
             this.Close();
-
         }
     }
 }
