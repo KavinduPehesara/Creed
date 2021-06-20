@@ -1,0 +1,10 @@
+C:\Users\MyPc\Desktop\virajani\Creed\shashini\SH\SH\bin\Debug\SH.exe.config
+C:\Users\MyPc\Desktop\virajani\Creed\shashini\SH\SH\bin\Debug\SH.exe
+C:\Users\MyPc\Desktop\virajani\Creed\shashini\SH\SH\bin\Debug\SH.pdb
+C:\Users\MyPc\Desktop\virajani\Creed\shashini\SH\SH\obj\Debug\SH.csprojAssemblyReference.cache
+C:\Users\MyPc\Desktop\virajani\Creed\shashini\SH\SH\obj\Debug\SH.Login.resources
+C:\Users\MyPc\Desktop\virajani\Creed\shashini\SH\SH\obj\Debug\SH.Properties.Resources.resources
+C:\Users\MyPc\Desktop\virajani\Creed\shashini\SH\SH\obj\Debug\SH.csproj.GenerateResource.cache
+C:\Users\MyPc\Desktop\virajani\Creed\shashini\SH\SH\obj\Debug\SH.csproj.CoreCompileInputs.cache
+C:\Users\MyPc\Desktop\virajani\Creed\shashini\SH\SH\obj\Debug\SH.exe
+C:\Users\MyPc\Desktop\virajani\Creed\shashini\SH\SH\obj\Debug\SH.pdb
