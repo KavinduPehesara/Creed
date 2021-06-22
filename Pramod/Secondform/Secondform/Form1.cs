@@ -37,6 +37,13 @@ namespace Secondform
             DateTime DAT = DateTime.Parse(SDOB.Text);
             string Housename;
 
+            string Gvalue = "";
+            bool isChecked = MaleB.Checked;
+            if (isChecked)
+                Gvalue = MaleB.Text;
+            else
+                Gvalue = FemaleB.Text;
+
             if (0 == STDID % 4)
             {
                 Housename = "Ruby";
@@ -55,7 +62,7 @@ namespace Secondform
             }
 
 
-            string qur = " UPDATE StudentDB SET StudentIndex =  " + STDID + " ,StudentName = ' " + STDname + " ' ,StudentDOB = ' " + DAT + " ',Houses = ' " + Housename + " ' WHERE StudentIndex = " + STDID + "";
+            string qur = " UPDATE StudentDB SET StudentIndex =  " + STDID + " ,StudentName = ' " + STDname + " ' ,StudentDOB = ' " + DAT + " ',Houses = ' " + Housename + " ' ,Gender = ' " + Gvalue + " ' WHERE StudentIndex = " + STDID + "";
             SqlCommand cmd = new SqlCommand(qur, con);
 
             try
@@ -83,6 +90,13 @@ namespace Secondform
             DateTime DAT = DateTime.Parse(SDOB.Text);
             string Housename;
 
+            string Gvalue = "";
+            bool isChecked = MaleB.Checked;
+            if (isChecked)
+                Gvalue = MaleB.Text;
+            else
+                Gvalue = FemaleB.Text;
+
             if (0 == STDID % 4)
             {
                 Housename = "Ruby" ;
@@ -101,7 +115,7 @@ namespace Secondform
             }
 
 
-            string qur = "INSERT INTO StudentDB VALUES (" + STDID + ",' " + STDname + " ' , ' " + DAT + " ' , ' " + Housename + " ' )";
+            string qur = "INSERT INTO StudentDB VALUES (" + STDID + ",' " + STDname + " ' , ' " + DAT + " ' , ' " + Housename + " ' , ' " + Gvalue + " ' )";
             SqlCommand cmd = new SqlCommand(qur, con);
 
             try
@@ -184,6 +198,17 @@ namespace Secondform
                     TxtSName.Text = rd[1].ToString();
                     SDOB.Text = rd[2].ToString();
                     House.Text = rd[3].ToString();
+                    string value = rd[4].ToString();
+
+                    if (value == " Female")
+                    {
+                        FemaleB.Checked = true;
+                    }
+                    else
+                    {
+                        MaleB.Checked = true;
+                    }
+
                 }
                 MessageBox.Show("Data Find Successfully");
 
@@ -206,6 +231,8 @@ namespace Secondform
             TxtSName.Text = "";
             SDOB.Text = "";
             House.Text = "";
+            MaleB.Text = "";
+            FemaleB.Text = "";
         }
     }
 }

@@ -45,6 +45,8 @@ namespace Thirdform
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.SpDOH = new System.Windows.Forms.DateTimePicker();
+            this.DropDown = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -185,7 +187,7 @@ namespace Thirdform
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 288);
+            this.dataGridView1.Location = new System.Drawing.Point(46, 340);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(567, 158);
@@ -203,13 +205,40 @@ namespace Thirdform
             this.SpDOH.TabIndex = 29;
             this.SpDOH.Value = new System.DateTime(2021, 6, 20, 22, 46, 9, 0);
             // 
+            // DropDown
+            // 
+            this.DropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DropDown.FormattingEnabled = true;
+            this.DropDown.Items.AddRange(new object[] {
+            "Under 19",
+            "Under 17",
+            "Under 15",
+            "Under 13"});
+            this.DropDown.Location = new System.Drawing.Point(207, 273);
+            this.DropDown.Name = "DropDown";
+            this.DropDown.Size = new System.Drawing.Size(299, 23);
+            this.DropDown.TabIndex = 30;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(46, 273);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(126, 19);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Age Categories";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(658, 480);
+            this.ClientSize = new System.Drawing.Size(658, 525);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.DropDown);
             this.Controls.Add(this.SpDOH);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
@@ -251,6 +280,8 @@ namespace Thirdform
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DateTimePicker SpDOH;
+        private System.Windows.Forms.ComboBox DropDown;
+        private System.Windows.Forms.Label label5;
     }
 }
 

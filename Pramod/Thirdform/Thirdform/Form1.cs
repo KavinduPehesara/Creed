@@ -42,6 +42,7 @@ namespace Thirdform
                     TxtSpName.Text = rd[1].ToString();
                     SpDOH.Text = rd[3].ToString();
                     string value = rd[2].ToString();
+                    string AgeG = rd[4].ToString();
 
                     if (value == "Team                ")
                     {
@@ -50,6 +51,23 @@ namespace Thirdform
                     else
                     {
                         Individual.Checked = true;
+                    }
+
+                    if (AgeG == " Under 19")
+                    {
+                        this.DropDown.SelectedIndex = 0;
+                    }
+                    else if (AgeG == " Under 17")
+                    {
+                        this.DropDown.SelectedIndex = 1;
+                    }
+                    else if (AgeG == " Under 15")
+                    {
+                        this.DropDown.SelectedIndex = 2;
+                    }
+                    else
+                    {
+                        this.DropDown.SelectedIndex = 3;
                     }
 
                 }
@@ -72,6 +90,7 @@ namespace Thirdform
             int SpNum = int.Parse(TxtSpNumber.Text);
             string SpName = (TxtSpName.Text);
             DateTime SpDAT = DateTime.Parse(SpDOH.Text);
+            string AgeT = DropDown.Text;
 
             string value = "";
             bool isChecked = Individual.Checked;
@@ -81,7 +100,7 @@ namespace Thirdform
                 value = Team.Text;
 
 
-            string qur = "INSERT INTO SportDB VALUES (" + SpNum + ",' " + SpName + " ' , '"+value+"',' " + SpDAT + " ')";
+            string qur = "INSERT INTO SportDB VALUES (" + SpNum + ",' " + SpName + " ' , '"+value+"',' " + SpDAT + " ' , ' " + AgeT + " ')";
             SqlCommand cmd = new SqlCommand(qur, con);
 
             try
@@ -149,6 +168,7 @@ namespace Thirdform
             TxtSpNumber.Text = "";
             TxtSpName.Text = "";
             SpDOH.Text = "";
+            this.DropDown.SelectedIndex = -1;
         }
 
         private void BtnSpUpdate_Click(object sender, EventArgs e)
@@ -156,6 +176,7 @@ namespace Thirdform
             int SpNum = int.Parse(TxtSpNumber.Text);
             string SpName = (TxtSpName.Text);
             DateTime SpDAT = DateTime.Parse(SpDOH.Text);
+            string AgeT = DropDown.Text;
 
             string value = "";
             bool isChecked = Individual.Checked;
@@ -165,7 +186,7 @@ namespace Thirdform
                 value = Team.Text;
 
 
-            string qur = " UPDATE SportDB SET SportNumber =  " + SpNum + " ,SportName = ' " + SpName + " ' ,SportType = ' " +value+ " ' ,DateOfHolding = ' " + SpDAT + " ' WHERE SportNumber= " + SpNum + "";
+            string qur = " UPDATE SportDB SET SportNumber =  " + SpNum + " ,SportName = ' " + SpName + " ' ,SportType = ' " +value+ " ' ,DateOfHolding = ' " + SpDAT + " ' ,Age = ' " + AgeT + " ' WHERE SportNumber= " + SpNum + "";
             SqlCommand cmd = new SqlCommand(qur, con);
 
             try
