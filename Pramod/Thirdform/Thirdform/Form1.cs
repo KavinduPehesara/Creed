@@ -40,8 +40,18 @@ namespace Thirdform
                 {
                     TxtSpNumber.Text = rd[0].ToString();
                     TxtSpName.Text = rd[1].ToString();
-
                     SpDOH.Text = rd[3].ToString();
+                    string value = rd[2].ToString();
+
+                    if (value == "Team                ")
+                    {
+                        Team.Checked = true;
+                    }
+                    else
+                    {
+                        Individual.Checked = true;
+                    }
+
                 }
                 MessageBox.Show("Data Find Successfully");
 
@@ -145,11 +155,17 @@ namespace Thirdform
         {
             int SpNum = int.Parse(TxtSpNumber.Text);
             string SpName = (TxtSpName.Text);
-            //string SpType = (RadioButton);
-            string gg = "ppp";
             DateTime SpDAT = DateTime.Parse(SpDOH.Text);
 
-            string qur = " UPDATE SportDB SET SportNumber =  " + SpNum + " ,SportName = ' " + SpName + " ' ,DateOfHolding = ' " + SpDAT + " ' WHERE SportNumber= " + SpNum + "";
+            string value = "";
+            bool isChecked = Individual.Checked;
+            if (isChecked)
+                value = Individual.Text;
+            else
+                value = Team.Text;
+
+
+            string qur = " UPDATE SportDB SET SportNumber =  " + SpNum + " ,SportName = ' " + SpName + " ' ,SportType = ' " +value+ " ' ,DateOfHolding = ' " + SpDAT + " ' WHERE SportNumber= " + SpNum + "";
             SqlCommand cmd = new SqlCommand(qur, con);
 
             try
