@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\C# Project\\Creed\\Pramod\\PointForm\\PointForm\\PointForm.csproj": {}
+    "F:\\C# Project\\Creed\\Pramod\\thirdplace\\thirdplace\\thirdplace.csproj": {}
   },
   "projects": {
-    "F:\\C# Project\\Creed\\Pramod\\PointForm\\PointForm\\PointForm.csproj": {
+    "F:\\C# Project\\Creed\\Pramod\\thirdplace\\thirdplace\\thirdplace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\C# Project\\Creed\\Pramod\\PointForm\\PointForm\\PointForm.csproj",
-        "projectName": "PointForm",
-        "projectPath": "F:\\C# Project\\Creed\\Pramod\\PointForm\\PointForm\\PointForm.csproj",
+        "projectUniqueName": "F:\\C# Project\\Creed\\Pramod\\thirdplace\\thirdplace\\thirdplace.csproj",
+        "projectName": "thirdplace",
+        "projectPath": "F:\\C# Project\\Creed\\Pramod\\thirdplace\\thirdplace\\thirdplace.csproj",
         "packagesPath": "C:\\Users\\Pramod\\.nuget\\packages\\",
-        "outputPath": "F:\\C# Project\\Creed\\Pramod\\PointForm\\PointForm\\obj\\",
+        "outputPath": "F:\\C# Project\\Creed\\Pramod\\thirdplace\\thirdplace\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pramod\\AppData\\Roaming\\NuGet\\NuGet.Config",
