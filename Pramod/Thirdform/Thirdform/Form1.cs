@@ -43,6 +43,7 @@ namespace Thirdform
                     SpDOH.Text = rd[3].ToString();
                     string value = rd[2].ToString();
                     string AgeG = rd[4].ToString();
+                    string Gob = rd[5].ToString();
 
                     if (value == "Team                ")
                     {
@@ -51,6 +52,15 @@ namespace Thirdform
                     else
                     {
                         Individual.Checked = true;
+                    }
+
+                    if(Gob == " Girls")
+                    {
+                        GirlsR.Checked = true;
+                    }
+                    else
+                    {
+                        BoysR.Checked = true;
                     }
 
                     if (AgeG == " Under 19")
@@ -99,8 +109,15 @@ namespace Thirdform
             else
                 value = Team.Text;
 
+            string GoB = "";
+            bool isCheckedd = GirlsR.Checked;
+            if (isCheckedd)
+                GoB = GirlsR.Text;
+            else
+                GoB = BoysR.Text;
 
-            string qur = "INSERT INTO SportDB VALUES (" + SpNum + ",' " + SpName + " ' , '"+value+"',' " + SpDAT + " ' , ' " + AgeT + " ')";
+
+            string qur = "INSERT INTO SportDB VALUES (" + SpNum + ",' " + SpName + " ' , '"+value+"',' " + SpDAT + " ' , ' " + AgeT + " ' , ' " + GoB + " ')";
             SqlCommand cmd = new SqlCommand(qur, con);
 
             try
@@ -185,8 +202,15 @@ namespace Thirdform
             else
                 value = Team.Text;
 
+            string GoB = "";
+            bool isCheckedd = GirlsR.Checked;
+            if (isCheckedd)
+                GoB = GirlsR.Text;
+            else
+                GoB = BoysR.Text;
 
-            string qur = " UPDATE SportDB SET SportNumber =  " + SpNum + " ,SportName = ' " + SpName + " ' ,SportType = ' " +value+ " ' ,DateOfHolding = ' " + SpDAT + " ' ,Age = ' " + AgeT + " ' WHERE SportNumber= " + SpNum + "";
+
+            string qur = " UPDATE SportDB SET SportNumber =  " + SpNum + " ,SportName = ' " + SpName + " ' ,SportType = ' " +value+ " ' ,DateOfHolding = ' " + SpDAT + " ' ,Age = ' " + AgeT + " ' , ' " + GoB + " ' WHERE SportNumber= " + SpNum + "";
             SqlCommand cmd = new SqlCommand(qur, con);
 
             try
@@ -215,6 +239,11 @@ namespace Thirdform
         private void Form1_Load(object sender, EventArgs e)
         {
             display_data();
+        }
+
+        private void GirlsR_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
