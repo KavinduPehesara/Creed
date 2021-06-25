@@ -21,8 +21,31 @@ namespace PointForm
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {   
+            DateTime now = DateTime.Now;
+            string qur = "SELECT SportName FROM SportDB WHERE DateOfHolding = ' " + now + " ' ";
+            SqlCommand cmd = new SqlCommand(qur, con);
 
+            try
+            {
+                con.Open();
+                SqlDataReader rd = cmd.ExecuteReader();
+                while (rd.Read())
+                {
+                    LBox.Items.Add(rd[0].ToString());
+                }
+                //MessageBox.Show("Data Find Successfully");
+
+            }
+            catch (SqlException se)
+            {
+                MessageBox.Show(se.ToString());
+            }
+            finally
+            {
+                con.Close();
+                //display_data();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -52,16 +75,40 @@ namespace PointForm
                 con.Close();
                 //display_data();
             }
+            String SPN = LBox.Text;
+            string qurr = "SELECT * FROM SportDB WHERE SportName = '" + SPN + "' ";
+            SqlCommand cmdd = new SqlCommand(qurr, con);
+
+            try
+            {
+                con.Open();
+                SqlDataReader rd = cmdd.ExecuteReader();
+                while (rd.Read())
+                {
+                    TestTX.Text = rd[0].ToString();
+                }
+                MessageBox.Show("Data Find Successfully");
+
+            }
+            catch (SqlException se)
+            {
+                MessageBox.Show(se.ToString());
+            }
+            finally
+            {
+                con.Close();
+                //display_data();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int SPID = 1;
+            int SPND = int.Parse(TestTX.Text);
             int STID = int.Parse(IDTX.Text);
-            int MARK = int.Parse(MarkTX.Text);
+            int MARK = 7;
             string House = HouseTX.Text;
 
-            string qur = "INSERT INTO PointDB VALUES (" + SPID + ",' " + STID + " ' , ' " + MARK + " ' , ' " + House + " ' )";
+            string qur = "INSERT INTO PointDB VALUES (" + SPND + ",' " + STID + " ' , ' " + MARK + " ' , ' " + House + " ' )";
 
             SqlCommand cmd = new SqlCommand(qur, con);
 
@@ -81,6 +128,16 @@ namespace PointForm
                 //display_data();
 
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Test_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
