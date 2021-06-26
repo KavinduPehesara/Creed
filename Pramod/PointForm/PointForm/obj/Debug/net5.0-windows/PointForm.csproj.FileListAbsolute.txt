@@ -44,3 +44,6 @@ C:\Users\Kavin\Desktop\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows
 C:\Users\Kavin\Desktop\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\ref\PointForm.dll
 C:\Users\Kavin\Desktop\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\PointForm.pdb
 C:\Users\Kavin\Desktop\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\PointForm.genruntimeconfig.cache
+C:\Users\Kavin\Desktop\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\PointForm.FirstPlacePoint.resources
+C:\Users\Kavin\Desktop\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\Main Form.Properties.Resources.resources
+C:\Users\Kavin\Desktop\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\MainProject.SecondPlacePoint.resources
