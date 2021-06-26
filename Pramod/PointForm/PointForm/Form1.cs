@@ -108,7 +108,7 @@ namespace PointForm
             int MARK = 7;
             string House = HouseTX.Text;
 
-            string qur = "INSERT INTO PointDB VALUES (" + SPND + ",' " + STID + " ' , ' " + MARK + " ' , ' " + House + " ' )";
+            string qur = "INSERT INTO PointTable (SportID, StudentID, House, Points) VALUES (" + SPND + ",' " + STID + " ' , ' " + House + " ' , ' " + MARK + " ' )";
 
             SqlCommand cmd = new SqlCommand(qur, con);
 

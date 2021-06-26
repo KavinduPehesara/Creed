@@ -34,9 +34,8 @@ namespace PointForm
             this.NameTX = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.HouseTX = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.Test = new System.Windows.Forms.Button();
+            this.Next = new System.Windows.Forms.Button();
+            this.CheckBT = new System.Windows.Forms.Button();
             this.LBox = new System.Windows.Forms.ListBox();
             this.TestTX = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -62,11 +61,13 @@ namespace PointForm
             // 
             // NameTX
             // 
+            this.NameTX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NameTX.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.NameTX.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NameTX.Location = new System.Drawing.Point(303, 226);
             this.NameTX.Name = "NameTX";
             this.NameTX.ReadOnly = true;
-            this.NameTX.Size = new System.Drawing.Size(235, 26);
+            this.NameTX.Size = new System.Drawing.Size(235, 19);
             this.NameTX.TabIndex = 3;
             this.NameTX.Text = "Name";
             this.NameTX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -76,7 +77,7 @@ namespace PointForm
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(222, 143);
+            this.label2.Location = new System.Drawing.Point(222, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 32);
             this.label2.TabIndex = 4;
@@ -85,47 +86,38 @@ namespace PointForm
             // 
             // HouseTX
             // 
+            this.HouseTX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.HouseTX.Cursor = System.Windows.Forms.Cursors.Default;
             this.HouseTX.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.HouseTX.Location = new System.Drawing.Point(422, 270);
+            this.HouseTX.Location = new System.Drawing.Point(363, 262);
             this.HouseTX.Name = "HouseTX";
             this.HouseTX.ReadOnly = true;
-            this.HouseTX.Size = new System.Drawing.Size(116, 26);
+            this.HouseTX.Size = new System.Drawing.Size(116, 19);
             this.HouseTX.TabIndex = 6;
             this.HouseTX.Text = "House";
             this.HouseTX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // Next
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(422, 379);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 33);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Next.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Next.Location = new System.Drawing.Point(422, 379);
+            this.Next.Name = "Next";
+            this.Next.Size = new System.Drawing.Size(116, 33);
+            this.Next.TabIndex = 7;
+            this.Next.Text = "Next";
+            this.Next.UseVisualStyleBackColor = true;
+            this.Next.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // CheckBT
             // 
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(288, 379);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 33);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Check";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // Test
-            // 
-            this.Test.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Test.Location = new System.Drawing.Point(156, 379);
-            this.Test.Name = "Test";
-            this.Test.Size = new System.Drawing.Size(116, 33);
-            this.Test.TabIndex = 11;
-            this.Test.Text = "Test";
-            this.Test.UseVisualStyleBackColor = true;
-            this.Test.Click += new System.EventHandler(this.Test_Click);
+            this.CheckBT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CheckBT.Location = new System.Drawing.Point(288, 379);
+            this.CheckBT.Name = "CheckBT";
+            this.CheckBT.Size = new System.Drawing.Size(116, 33);
+            this.CheckBT.TabIndex = 8;
+            this.CheckBT.Text = "Check";
+            this.CheckBT.UseVisualStyleBackColor = true;
+            this.CheckBT.Click += new System.EventHandler(this.button2_Click);
             // 
             // LBox
             // 
@@ -134,12 +126,12 @@ namespace PointForm
             this.LBox.ItemHeight = 17;
             this.LBox.Location = new System.Drawing.Point(43, 39);
             this.LBox.Name = "LBox";
-            this.LBox.Size = new System.Drawing.Size(495, 38);
+            this.LBox.Size = new System.Drawing.Size(495, 55);
             this.LBox.TabIndex = 13;
             // 
             // TestTX
             // 
-            this.TestTX.Location = new System.Drawing.Point(406, 334);
+            this.TestTX.Location = new System.Drawing.Point(422, 333);
             this.TestTX.Name = "TestTX";
             this.TestTX.Size = new System.Drawing.Size(100, 23);
             this.TestTX.TabIndex = 14;
@@ -154,9 +146,8 @@ namespace PointForm
             this.ClientSize = new System.Drawing.Size(591, 450);
             this.Controls.Add(this.TestTX);
             this.Controls.Add(this.LBox);
-            this.Controls.Add(this.Test);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CheckBT);
+            this.Controls.Add(this.Next);
             this.Controls.Add(this.HouseTX);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.NameTX);
@@ -177,9 +168,8 @@ namespace PointForm
         private System.Windows.Forms.TextBox NameTX;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox HouseTX;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button Test;
+        private System.Windows.Forms.Button Next;
+        private System.Windows.Forms.Button CheckBT;
         private System.Windows.Forms.ListBox LBox;
         private System.Windows.Forms.TextBox TestTX;
     }
