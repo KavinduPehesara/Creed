@@ -8,3 +8,157 @@ C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.csproj.CoreComp
 C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.exe
 C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.pdb
 C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.Creed.resources
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.AdminLogin.resources
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.StudentDataEntry.resources
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Azure.Core.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Azure.Identity.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Identity.Client.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Buffers.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Memory.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.Permissions.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Text.Json.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.ValueTuple.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Azure.Core.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Azure.Identity.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Data.SqlClient.pdb
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Data.SqlClient.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Identity.Client.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Buffers.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Memory.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.Permissions.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Text.Json.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\System.ValueTuple.xml
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.csproj.CopyComplete
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.SportDataEntry.resources
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Creed.exe.config
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Creed.exe
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Creed.pdb
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Azure.Core.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Azure.Identity.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Data.SqlClient.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Identity.Client.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Logging.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Buffers.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Configuration.ConfigurationManager.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Data.SqlClient.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Memory.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Numerics.Vectors.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.AccessControl.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.Permissions.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.Principal.Windows.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Text.Encodings.Web.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Text.Json.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Threading.Tasks.Extensions.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.ValueTuple.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Azure.Core.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Azure.Identity.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Data.SqlClient.pdb
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Data.SqlClient.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Identity.Client.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Logging.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Buffers.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Configuration.ConfigurationManager.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Data.SqlClient.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Memory.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Numerics.Vectors.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.AccessControl.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.Permissions.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Security.Principal.Windows.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Text.Encodings.Web.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Text.Json.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.Threading.Tasks.Extensions.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\System.ValueTuple.xml
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.csprojAssemblyReference.cache
+F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.AdminLogin.resources
+F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.Creed.resources
+F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.Properties.Resources.resources
+F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.SportDataEntry.resources
+F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.StudentDataEntry.resources
+F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.csproj.GenerateResource.cache
+F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.csproj.CoreCompileInputs.cache
+F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.csproj.CopyComplete
+F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.exe
+F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.pdb

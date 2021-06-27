@@ -36,5 +36,12 @@ namespace Creed
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AdminLogin frm = new AdminLogin();
+            frm.Show();
+            Hide();
+        }
     }
 }

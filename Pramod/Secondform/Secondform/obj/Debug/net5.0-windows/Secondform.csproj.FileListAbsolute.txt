@@ -90,3 +90,4 @@ F:\C# Project\Creed\Pramod\Secondform\Secondform\obj\Debug\net5.0-windows\Second
 F:\C# Project\Creed\Pramod\Secondform\Secondform\obj\Debug\net5.0-windows\ref\Secondform.dll
 F:\C# Project\Creed\Pramod\Secondform\Secondform\obj\Debug\net5.0-windows\Secondform.pdb
 F:\C# Project\Creed\Pramod\Secondform\Secondform\obj\Debug\net5.0-windows\Secondform.genruntimeconfig.cache
+C:\Users\Kavin\Desktop\Creed\Pramod\Secondform\Secondform\obj\Debug\net5.0-windows\Thirdform.SportDataEntry.resources
