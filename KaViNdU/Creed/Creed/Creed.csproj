@@ -156,8 +156,20 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FirstPlace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstPlace.Designer.cs">
+      <DependentUpon>FirstPlace.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecondPlace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondPlace.Designer.cs">
+      <DependentUpon>SecondPlace.cs</DependentUpon>
+    </Compile>
     <Compile Include="SportDataEntry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,11 +182,20 @@
     <Compile Include="StudentDataEntry.Designer.cs">
       <DependentUpon>StudentDataEntry.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThirdPlace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThirdPlace.Designer.cs">
+      <DependentUpon>ThirdPlace.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstPlace.resx">
+      <DependentUpon>FirstPlace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -185,11 +206,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SecondPlace.resx">
+      <DependentUpon>SecondPlace.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SportDataEntry.resx">
       <DependentUpon>SportDataEntry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentDataEntry.resx">
       <DependentUpon>StudentDataEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThirdPlace.resx">
+      <DependentUpon>ThirdPlace.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

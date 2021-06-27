@@ -1778,19 +1778,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kavin\\.nuget\\packages\\": {}
+    "C:\\Users\\Pramod\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kavin\\Desktop\\Creed\\Pramod\\PointForm\\PointForm\\PointForm.csproj",
+      "projectUniqueName": "F:\\C# Project\\Creed\\Pramod\\PointForm\\PointForm\\PointForm.csproj",
       "projectName": "Main Form",
-      "projectPath": "C:\\Users\\Kavin\\Desktop\\Creed\\Pramod\\PointForm\\PointForm\\PointForm.csproj",
-      "packagesPath": "C:\\Users\\Kavin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kavin\\Desktop\\Creed\\Pramod\\PointForm\\PointForm\\obj\\",
+      "projectPath": "F:\\C# Project\\Creed\\Pramod\\PointForm\\PointForm\\PointForm.csproj",
+      "packagesPath": "C:\\Users\\Pramod\\.nuget\\packages\\",
+      "outputPath": "F:\\C# Project\\Creed\\Pramod\\PointForm\\PointForm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Kavin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Pramod\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1843,7 +1843,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

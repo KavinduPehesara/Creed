@@ -47,3 +47,12 @@ C:\Users\Kavin\Desktop\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows
 C:\Users\Kavin\Desktop\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\PointForm.FirstPlacePoint.resources
 C:\Users\Kavin\Desktop\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\Main Form.Properties.Resources.resources
 C:\Users\Kavin\Desktop\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\MainProject.SecondPlacePoint.resources
+F:\C# Project\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\PointForm.csprojAssemblyReference.cache
+F:\C# Project\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\PointForm.FirstPlacePoint.resources
+F:\C# Project\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\Main Form.Properties.Resources.resources
+F:\C# Project\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\MainProject.SecondPlacePoint.resources
+F:\C# Project\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\PointForm.csproj.GenerateResource.cache
+F:\C# Project\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\PointForm.GeneratedMSBuildEditorConfig.editorconfig
+F:\C# Project\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\PointForm.AssemblyInfoInputs.cache
+F:\C# Project\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\PointForm.AssemblyInfo.cs
+F:\C# Project\Creed\Pramod\PointForm\PointForm\obj\Debug\net5.0-windows\PointForm.csproj.CoreCompileInputs.cache
