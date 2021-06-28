@@ -162,3 +162,6 @@ F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.csproj.CoreCompileInputs
 F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.csproj.CopyComplete
 F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.exe
 F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.pdb
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.FirstPlace.resources
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.SecondPlace.resources
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.ThirdPlace.resources
