@@ -37,10 +37,15 @@ namespace Creed
             this.IDTX = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lable1 = new System.Windows.Forms.Label();
+            this.HomeBT = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.TestBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Finish
             // 
+            this.Finish.FlatAppearance.BorderSize = 0;
+            this.Finish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Finish.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Finish.Location = new System.Drawing.Point(482, 357);
             this.Finish.Name = "Finish";
@@ -52,6 +57,8 @@ namespace Creed
             // 
             // CheckBT
             // 
+            this.CheckBT.FlatAppearance.BorderSize = 0;
+            this.CheckBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CheckBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckBT.Location = new System.Drawing.Point(354, 357);
             this.CheckBT.Name = "CheckBT";
@@ -63,30 +70,33 @@ namespace Creed
             // 
             // HouseTX
             // 
+            this.HouseTX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.HouseTX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HouseTX.Location = new System.Drawing.Point(410, 271);
             this.HouseTX.Name = "HouseTX";
-            this.HouseTX.Size = new System.Drawing.Size(160, 26);
+            this.HouseTX.Size = new System.Drawing.Size(160, 19);
             this.HouseTX.TabIndex = 21;
             this.HouseTX.Text = "House";
             this.HouseTX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // NameTX
             // 
+            this.NameTX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NameTX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameTX.Location = new System.Drawing.Point(410, 212);
             this.NameTX.Name = "NameTX";
-            this.NameTX.Size = new System.Drawing.Size(160, 26);
+            this.NameTX.Size = new System.Drawing.Size(160, 19);
             this.NameTX.TabIndex = 20;
             this.NameTX.Text = "Name";
             this.NameTX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // IDTX
             // 
+            this.IDTX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.IDTX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IDTX.Location = new System.Drawing.Point(200, 212);
             this.IDTX.Name = "IDTX";
-            this.IDTX.Size = new System.Drawing.Size(169, 26);
+            this.IDTX.Size = new System.Drawing.Size(169, 19);
             this.IDTX.TabIndex = 19;
             this.IDTX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -96,7 +106,7 @@ namespace Creed
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(63, 216);
+            this.label1.Location = new System.Drawing.Point(64, 213);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 21);
             this.label1.TabIndex = 18;
@@ -115,6 +125,45 @@ namespace Creed
             this.lable1.Text = "Second Runner Up";
             this.lable1.Click += new System.EventHandler(this.lable1_Click);
             // 
+            // HomeBT
+            // 
+            this.HomeBT.BackColor = System.Drawing.Color.Transparent;
+            this.HomeBT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomeBT.BackgroundImage")));
+            this.HomeBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.HomeBT.FlatAppearance.BorderSize = 0;
+            this.HomeBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeBT.Location = new System.Drawing.Point(12, 12);
+            this.HomeBT.Name = "HomeBT";
+            this.HomeBT.Size = new System.Drawing.Size(56, 51);
+            this.HomeBT.TabIndex = 24;
+            this.HomeBT.UseVisualStyleBackColor = false;
+            this.HomeBT.Click += new System.EventHandler(this.HomeBT_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(74, 18);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(37, 38);
+            this.button2.TabIndex = 25;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // TestBox
+            // 
+            this.TestBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TestBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TestBox.Location = new System.Drawing.Point(443, 12);
+            this.TestBox.Name = "TestBox";
+            this.TestBox.Size = new System.Drawing.Size(169, 19);
+            this.TestBox.TabIndex = 26;
+            this.TestBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TestBox.Visible = false;
+            // 
             // ThirdPlace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,6 +171,9 @@ namespace Creed
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(624, 450);
+            this.Controls.Add(this.TestBox);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.HomeBT);
             this.Controls.Add(this.Finish);
             this.Controls.Add(this.CheckBT);
             this.Controls.Add(this.HouseTX);
@@ -130,7 +182,9 @@ namespace Creed
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lable1);
             this.Name = "ThirdPlace";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThirdPlace";
+            this.Load += new System.EventHandler(this.ThirdPlace_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,5 +199,8 @@ namespace Creed
         private System.Windows.Forms.TextBox IDTX;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lable1;
+        private System.Windows.Forms.Button HomeBT;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox TestBox;
     }
 }

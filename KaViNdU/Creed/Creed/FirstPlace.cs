@@ -21,18 +21,16 @@ namespace Creed
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int STDID = int.Parse(IDTX.Text);
-            string qur = "SELECT * FROM StudentDB WHERE StudentIndex = " + STDID + "";
-            SqlCommand cmd = new SqlCommand(qur, con);
+            string qurrr = "(SELECT MAX(StudentIndex) FROM StudentDB)";
+            SqlCommand cmddd = new SqlCommand(qurrr, con);
 
             try
             {
                 con.Open();
-                SqlDataReader rd = cmd.ExecuteReader();
+                SqlDataReader rd = cmddd.ExecuteReader();
                 while (rd.Read())
                 {
-                    NameTX.Text = rd[1].ToString();
-                    HouseTX.Text = rd[3].ToString();
+                    TestBox.Text = rd[0].ToString();
                 }
                 //MessageBox.Show("Data Find Successfully");
 
@@ -46,30 +44,55 @@ namespace Creed
                 con.Close();
                 //display_data();
             }
-            String SPN = LBox.Text;
-            string qurr = "SELECT * FROM SportDB WHERE SportName = '" + SPN + "' ";
-            SqlCommand cmdd = new SqlCommand(qurr, con);
 
-            try
+            if (System.Text.RegularExpressions.Regex.IsMatch(IDTX.Text, "[^0-9]"))
             {
-                con.Open();
-                SqlDataReader rd = cmdd.ExecuteReader();
-                while (rd.Read())
+                MessageBox.Show("Student Index Number should only be Numbers !");
+            }
+            else
+            {
+                if (IDTX.Text == "")
                 {
-                    TestTX.Text = rd[0].ToString();
+                    MessageBox.Show("Fill the Student Index field !");
                 }
-                //MessageBox.Show("Data Find Successfully");
+                else
+                {
+                    if (int.Parse(IDTX.Text) > int.Parse(TestBox.Text))
+                    {
+                        MessageBox.Show("Enterd Index Doesnt Match !");
+                    }
+                    else
+                    {
 
+                        int STDID = int.Parse(IDTX.Text);
+                        string qur = "SELECT * FROM StudentDB WHERE StudentIndex = " + STDID + "";
+                        SqlCommand cmd = new SqlCommand(qur, con);
+
+                        try
+                        {
+                            con.Open();
+                            SqlDataReader rd = cmd.ExecuteReader();
+                            while (rd.Read())
+                            {
+                                NameTX.Text = rd[1].ToString();
+                                HouseTX.Text = rd[3].ToString();
+                            }
+                            //MessageBox.Show("Data Find Successfully");
+
+                        }
+                        catch (SqlException se)
+                        {
+                            MessageBox.Show(se.ToString());
+                        }
+                        finally
+                        {
+                            con.Close();
+                            //display_data();
+                        }
+                    }
+                }
             }
-            catch (SqlException se)
-            {
-                MessageBox.Show(se.ToString());
-            }
-            finally
-            {
-                con.Close();
-                //display_data();
-            }
+            
         }
 
         private void FirstPlace_Load(object sender, EventArgs e)
@@ -102,20 +125,20 @@ namespace Creed
 
         public void Next_Click(object sender, EventArgs e)
         {
-            int SPND = int.Parse(TestTX.Text);
-            int STID = int.Parse(IDTX.Text);
-            int MARK = 7;
-            string House = HouseTX.Text;
 
-            string qur = "INSERT INTO PointTable (SportID, StudentID, House, Points) VALUES (" + SPND + ",' " + STID + " ' , ' " + House + " ' , ' " + MARK + " ' )";
-
-            SqlCommand cmd = new SqlCommand(qur, con);
+            string qurrr = "(SELECT MAX(StudentIndex) FROM StudentDB)";
+            SqlCommand cmddd = new SqlCommand(qurrr, con);
 
             try
             {
                 con.Open();
-                cmd.ExecuteNonQuery();
-                //MessageBox.Show("Data Insert Successfully");
+                SqlDataReader rd = cmddd.ExecuteReader();
+                while (rd.Read())
+                {
+                    TestBox.Text = rd[0].ToString();
+                }
+                //MessageBox.Show("Data Find Successfully");
+
             }
             catch (SqlException se)
             {
@@ -125,16 +148,128 @@ namespace Creed
             {
                 con.Close();
                 //display_data();
-
             }
 
-            ControlID.TextData = TestTX.Text;
+            if (System.Text.RegularExpressions.Regex.IsMatch(IDTX.Text, "[^0-9]"))
+            {
+                //MessageBox.Show("Student Index Number should only be Numbers !");
+            }
+            else
+            {
+                if (IDTX.Text == "")
+                {
+                    //MessageBox.Show("Fill the Student Index field !");
+                }
+                else
+                {
+                    
 
-            SecondPlace frm = new SecondPlace();
-            frm.Show();
-            Hide();
+                        int STDID = int.Parse(IDTX.Text);
+                        string qur = "SELECT * FROM StudentDB WHERE StudentIndex = " + STDID + "";
+                        SqlCommand cmd = new SqlCommand(qur, con);
 
+                        try
+                        {
+                            con.Open();
+                            SqlDataReader rd = cmd.ExecuteReader();
+                            while (rd.Read())
+                            {
+                                NameTX.Text = rd[1].ToString();
+                                HouseTX.Text = rd[3].ToString();
+                            }
+                            //MessageBox.Show("Data Find Successfully");
 
+                        }
+                        catch (SqlException se)
+                        {
+                            MessageBox.Show(se.ToString());
+                        }
+                        finally
+                        {
+                            con.Close();
+                            //display_data();
+                        }
+                    
+                }
+            }
+
+            if (System.Text.RegularExpressions.Regex.IsMatch(IDTX.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Student Index Number should only be Numbers !");
+            }
+            else
+            {
+                if (IDTX.Text == "" || LBox.Text == "")
+                {
+                    MessageBox.Show("Fill the Student Index field !");
+                }
+                else
+                {
+                    if (int.Parse(IDTX.Text) > int.Parse(TestBox.Text))
+                    {
+                        MessageBox.Show("Enterd Index Doesnt Match !");
+                    }
+                    else
+                    {
+                        String SPN = LBox.Text;
+                        string qurr = "SELECT * FROM SportDB WHERE SportName = '" + SPN + "' ";
+                        SqlCommand cmdd = new SqlCommand(qurr, con);
+
+                        try
+                        {
+                            con.Open();
+                            SqlDataReader rd = cmdd.ExecuteReader();
+                            while (rd.Read())
+                            {
+                                TestTX.Text = rd[0].ToString();
+                            }
+                            //MessageBox.Show("Data Find Successfully");
+
+                        }
+                        catch (SqlException se)
+                        {
+                            MessageBox.Show(se.ToString());
+                        }
+                        finally
+                        {
+                            con.Close();
+                            //display_data();
+                        }
+
+                        int SPND = int.Parse(TestTX.Text);
+                        int STID = int.Parse(IDTX.Text);
+                        int MARK = 7;
+                        string House = HouseTX.Text;
+
+                        string qur = "INSERT INTO PointTable (SportID, StudentID, House, Points) VALUES (" + SPND + ",' " + STID + " ' , ' " + House + " ' , ' " + MARK + " ' )";
+
+                        SqlCommand cmd = new SqlCommand(qur, con);
+
+                        try
+                        {
+                            con.Open();
+                            cmd.ExecuteNonQuery();
+                            //MessageBox.Show("Data Insert Successfully");
+                        }
+                        catch (SqlException se)
+                        {
+                            MessageBox.Show(se.ToString());
+                        }
+                        finally
+                        {
+                            con.Close();
+                            //display_data();
+
+                        }
+
+                        ControlID.TextData = TestTX.Text;
+
+                        SecondPlace frm = new SecondPlace();
+                        frm.Show();
+                        Hide();
+                    }
+                }
+            }
         }
 
         public static class ControlID
@@ -142,6 +277,18 @@ namespace Creed
             public static string TextData { get; set; }
         }
 
+        private void HomeBT_Click(object sender, EventArgs e)
+        {
+            Creed frm = new Creed();
+            frm.Show();
+            Hide();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PointAddLogin frm = new PointAddLogin();
+            frm.Show();
+            Hide();
+        }
     }
 }

@@ -165,3 +165,4 @@ F:\C# Project\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.pdb
 C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.FirstPlace.resources
 C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.SecondPlace.resources
 C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.ThirdPlace.resources
+C:\Users\Kavin\Desktop\Creed\KaViNdU\Creed\Creed\obj\Debug\Creed.PointAddLogin.resources

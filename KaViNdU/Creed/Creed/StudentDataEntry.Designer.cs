@@ -46,6 +46,8 @@ namespace Creed
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MaleB = new System.Windows.Forms.RadioButton();
             this.FemaleB = new System.Windows.Forms.RadioButton();
+            this.HomeBT = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +56,7 @@ namespace Creed
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 30);
+            this.label1.Location = new System.Drawing.Point(34, 72);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 19);
@@ -67,7 +69,7 @@ namespace Creed
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(37, 92);
+            this.label2.Location = new System.Drawing.Point(34, 134);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 19);
@@ -79,7 +81,7 @@ namespace Creed
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(37, 149);
+            this.label3.Location = new System.Drawing.Point(34, 191);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 19);
@@ -92,7 +94,7 @@ namespace Creed
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 217);
+            this.label4.Location = new System.Drawing.Point(34, 232);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 19);
@@ -102,14 +104,14 @@ namespace Creed
             // 
             // NameTXT
             // 
-            this.NameTXT.Location = new System.Drawing.Point(199, 88);
+            this.NameTXT.Location = new System.Drawing.Point(196, 130);
             this.NameTXT.Name = "NameTXT";
             this.NameTXT.Size = new System.Drawing.Size(245, 29);
             this.NameTXT.TabIndex = 5;
             // 
             // IndexTXT
             // 
-            this.IndexTXT.Location = new System.Drawing.Point(199, 23);
+            this.IndexTXT.Location = new System.Drawing.Point(196, 65);
             this.IndexTXT.Name = "IndexTXT";
             this.IndexTXT.Size = new System.Drawing.Size(245, 29);
             this.IndexTXT.TabIndex = 6;
@@ -118,7 +120,7 @@ namespace Creed
             // 
             this.DTPicker.CalendarFont = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DTPicker.CustomFormat = "dd,mm,yyyy";
-            this.DTPicker.Location = new System.Drawing.Point(199, 141);
+            this.DTPicker.Location = new System.Drawing.Point(196, 183);
             this.DTPicker.Name = "DTPicker";
             this.DTPicker.Size = new System.Drawing.Size(245, 29);
             this.DTPicker.TabIndex = 7;
@@ -128,7 +130,7 @@ namespace Creed
             this.FindBT.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.FindBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FindBT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FindBT.Location = new System.Drawing.Point(467, 84);
+            this.FindBT.Location = new System.Drawing.Point(464, 126);
             this.FindBT.Name = "FindBT";
             this.FindBT.Size = new System.Drawing.Size(86, 35);
             this.FindBT.TabIndex = 8;
@@ -141,7 +143,7 @@ namespace Creed
             this.ClearBT.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClearBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearBT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearBT.Location = new System.Drawing.Point(467, 21);
+            this.ClearBT.Location = new System.Drawing.Point(464, 63);
             this.ClearBT.Name = "ClearBT";
             this.ClearBT.Size = new System.Drawing.Size(86, 35);
             this.ClearBT.TabIndex = 9;
@@ -154,7 +156,7 @@ namespace Creed
             this.House.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.House.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.House.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.House.Location = new System.Drawing.Point(394, 206);
+            this.House.Location = new System.Drawing.Point(391, 248);
             this.House.Name = "House";
             this.House.Size = new System.Drawing.Size(159, 35);
             this.House.TabIndex = 10;
@@ -166,7 +168,7 @@ namespace Creed
             this.button4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(467, 140);
+            this.button4.Location = new System.Drawing.Point(464, 182);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(86, 35);
             this.button4.TabIndex = 11;
@@ -179,7 +181,7 @@ namespace Creed
             this.UpdateBT.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.UpdateBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateBT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateBT.Location = new System.Drawing.Point(341, 266);
+            this.UpdateBT.Location = new System.Drawing.Point(338, 308);
             this.UpdateBT.Name = "UpdateBT";
             this.UpdateBT.Size = new System.Drawing.Size(212, 35);
             this.UpdateBT.TabIndex = 12;
@@ -192,7 +194,7 @@ namespace Creed
             this.SaveBT.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.SaveBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveBT.Location = new System.Drawing.Point(40, 268);
+            this.SaveBT.Location = new System.Drawing.Point(37, 310);
             this.SaveBT.Name = "SaveBT";
             this.SaveBT.Size = new System.Drawing.Size(211, 35);
             this.SaveBT.TabIndex = 13;
@@ -203,8 +205,9 @@ namespace Creed
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(41, 322);
+            this.dataGridView1.Location = new System.Drawing.Point(38, 364);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(512, 129);
             this.dataGridView1.TabIndex = 14;
             // 
@@ -212,7 +215,7 @@ namespace Creed
             // 
             this.MaleB.AutoSize = true;
             this.MaleB.BackColor = System.Drawing.Color.Transparent;
-            this.MaleB.Location = new System.Drawing.Point(199, 213);
+            this.MaleB.Location = new System.Drawing.Point(196, 255);
             this.MaleB.Name = "MaleB";
             this.MaleB.Size = new System.Drawing.Size(62, 25);
             this.MaleB.TabIndex = 15;
@@ -224,7 +227,7 @@ namespace Creed
             // 
             this.FemaleB.AutoSize = true;
             this.FemaleB.BackColor = System.Drawing.Color.Transparent;
-            this.FemaleB.Location = new System.Drawing.Point(283, 213);
+            this.FemaleB.Location = new System.Drawing.Point(280, 255);
             this.FemaleB.Name = "FemaleB";
             this.FemaleB.Size = new System.Drawing.Size(78, 25);
             this.FemaleB.TabIndex = 16;
@@ -232,13 +235,42 @@ namespace Creed
             this.FemaleB.Text = "Female";
             this.FemaleB.UseVisualStyleBackColor = false;
             // 
+            // HomeBT
+            // 
+            this.HomeBT.BackColor = System.Drawing.Color.Transparent;
+            this.HomeBT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomeBT.BackgroundImage")));
+            this.HomeBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.HomeBT.FlatAppearance.BorderSize = 0;
+            this.HomeBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeBT.Location = new System.Drawing.Point(12, 13);
+            this.HomeBT.Name = "HomeBT";
+            this.HomeBT.Size = new System.Drawing.Size(56, 51);
+            this.HomeBT.TabIndex = 17;
+            this.HomeBT.UseVisualStyleBackColor = false;
+            this.HomeBT.Click += new System.EventHandler(this.HomeBT_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(74, 19);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(37, 38);
+            this.button2.TabIndex = 18;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // StudentDataEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(592, 478);
+            this.ClientSize = new System.Drawing.Size(592, 528);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.FemaleB);
             this.Controls.Add(this.MaleB);
             this.Controls.Add(this.dataGridView1);
@@ -251,13 +283,15 @@ namespace Creed
             this.Controls.Add(this.DTPicker);
             this.Controls.Add(this.IndexTXT);
             this.Controls.Add(this.NameTXT);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.HomeBT);
+            this.Controls.Add(this.label4);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StudentDataEntry";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentDataEntry";
             this.Load += new System.EventHandler(this.StudentDataEntry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -284,5 +318,7 @@ namespace Creed
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.RadioButton MaleB;
         private System.Windows.Forms.RadioButton FemaleB;
+        private System.Windows.Forms.Button HomeBT;
+        private System.Windows.Forms.Button button2;
     }
 }
