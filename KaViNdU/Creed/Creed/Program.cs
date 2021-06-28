@@ -16,7 +16,7 @@ namespace Creed
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Creed());
+            Application.Run(new FirstPlace());
         }
     }
 }

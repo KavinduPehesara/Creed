@@ -130,8 +130,8 @@ namespace PointForm
 
             }
 
-            SecondPlacePoint frm = new SecondPlacePoint(SPND);
-            frm.Show();
+            //SecondPlacePoint frm = new SecondPlacePoint(SPND);
+            //frm.Show();
 
         }
 
