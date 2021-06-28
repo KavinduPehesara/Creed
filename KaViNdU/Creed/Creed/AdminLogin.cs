@@ -20,19 +20,24 @@ namespace Creed
         private void LoginBT_Click(object sender, EventArgs e)
         {
 
-
-            if (UserNameTXT.Text == "Admin" && PasswordTXT.Text == "A1234")
+            if (UserNameTXT.Text == "" || PasswordTXT.Text == "")
             {
-                //MessageBox.Show("Login Success!");
-                StudentDataEntry frm = new StudentDataEntry();
-                frm.Show();
-                Hide();
-
+                MessageBox.Show("Please Fill the all Fileds");
             }
+            else {
+                if (UserNameTXT.Text == "Admin" && PasswordTXT.Text == "A1234")
+                {
+                    //MessageBox.Show("Login Success!");
+                    StudentDataEntry frm = new StudentDataEntry();
+                    frm.Show();
+                    Hide();
 
-            else
-            {
-                MessageBox.Show("Incorrect User Name or Password", "Message Box!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                else
+                {
+                    MessageBox.Show("Incorrect User Name or Password", "Message Box!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -48,19 +53,40 @@ namespace Creed
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (UserNameTXT.Text == "Admin" && PasswordTXT.Text == "A1234")
+            if (UserNameTXT.Text == "" || PasswordTXT.Text == "")
             {
-                //MessageBox.Show("Login Success!");
-                SportDataEntry frm = new SportDataEntry();
-                frm.Show();
-                Hide();
-
+                MessageBox.Show("Please Fill the all Fileds");
             }
-
             else
             {
-                MessageBox.Show("Incorrect User Name or Password", "Message Box!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (UserNameTXT.Text == "Admin" && PasswordTXT.Text == "A1234")
+                {
+                    //MessageBox.Show("Login Success!");
+                    SportDataEntry frm = new SportDataEntry();
+                    frm.Show();
+                    Hide();
+
+                }
+
+                else
+                {
+                    MessageBox.Show("Incorrect User Name or Password", "Message Box!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+        }
+
+        private void HomeBT_Click(object sender, EventArgs e)
+        {
+            Creed frm = new Creed();
+            frm.Show();
+            Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Creed frm = new Creed();
+            frm.Show();
+            Hide();
         }
     }
 }

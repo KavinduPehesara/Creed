@@ -43,14 +43,16 @@ namespace Creed
             this.Team = new System.Windows.Forms.RadioButton();
             this.DropDown = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.GirlsR = new System.Windows.Forms.RadioButton();
             this.BoysR = new System.Windows.Forms.RadioButton();
+            this.GirlsR = new System.Windows.Forms.RadioButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.FindBT = new System.Windows.Forms.Button();
             this.DeleteBT = new System.Windows.Forms.Button();
             this.ClearBT = new System.Windows.Forms.Button();
             this.UpdateBT = new System.Windows.Forms.Button();
             this.SaveBT = new System.Windows.Forms.Button();
+            this.HomeBT = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -197,18 +199,6 @@ namespace Creed
             this.panel1.Size = new System.Drawing.Size(217, 27);
             this.panel1.TabIndex = 13;
             // 
-            // GirlsR
-            // 
-            this.GirlsR.AutoSize = true;
-            this.GirlsR.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GirlsR.Location = new System.Drawing.Point(0, 3);
-            this.GirlsR.Name = "GirlsR";
-            this.GirlsR.Size = new System.Drawing.Size(62, 23);
-            this.GirlsR.TabIndex = 0;
-            this.GirlsR.TabStop = true;
-            this.GirlsR.Text = "Girls";
-            this.GirlsR.UseVisualStyleBackColor = true;
-            // 
             // BoysR
             // 
             this.BoysR.AutoSize = true;
@@ -220,6 +210,18 @@ namespace Creed
             this.BoysR.TabStop = true;
             this.BoysR.Text = "Boys";
             this.BoysR.UseVisualStyleBackColor = true;
+            // 
+            // GirlsR
+            // 
+            this.GirlsR.AutoSize = true;
+            this.GirlsR.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GirlsR.Location = new System.Drawing.Point(0, 3);
+            this.GirlsR.Name = "GirlsR";
+            this.GirlsR.Size = new System.Drawing.Size(62, 23);
+            this.GirlsR.TabIndex = 0;
+            this.GirlsR.TabStop = true;
+            this.GirlsR.Text = "Girls";
+            this.GirlsR.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -284,6 +286,34 @@ namespace Creed
             this.SaveBT.UseVisualStyleBackColor = true;
             this.SaveBT.Click += new System.EventHandler(this.SaveBT_Click);
             // 
+            // HomeBT
+            // 
+            this.HomeBT.BackColor = System.Drawing.Color.Transparent;
+            this.HomeBT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomeBT.BackgroundImage")));
+            this.HomeBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.HomeBT.FlatAppearance.BorderSize = 0;
+            this.HomeBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeBT.Location = new System.Drawing.Point(12, 8);
+            this.HomeBT.Name = "HomeBT";
+            this.HomeBT.Size = new System.Drawing.Size(56, 51);
+            this.HomeBT.TabIndex = 20;
+            this.HomeBT.UseVisualStyleBackColor = false;
+            this.HomeBT.Click += new System.EventHandler(this.HomeBT_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(74, 14);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(37, 38);
+            this.button2.TabIndex = 21;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // SportDataEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,6 +321,8 @@ namespace Creed
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(658, 551);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.HomeBT);
             this.Controls.Add(this.SaveBT);
             this.Controls.Add(this.UpdateBT);
             this.Controls.Add(this.ClearBT);
@@ -312,6 +344,7 @@ namespace Creed
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SportDataEntry";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SportDataEntry";
             this.Load += new System.EventHandler(this.SportDataEntry_Load);
             this.panel1.ResumeLayout(false);
@@ -345,5 +378,7 @@ namespace Creed
         private System.Windows.Forms.Button ClearBT;
         private System.Windows.Forms.Button UpdateBT;
         private System.Windows.Forms.Button SaveBT;
+        private System.Windows.Forms.Button HomeBT;
+        private System.Windows.Forms.Button button2;
     }
 }

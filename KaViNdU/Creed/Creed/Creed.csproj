@@ -162,6 +162,12 @@
     <Compile Include="FirstPlace.Designer.cs">
       <DependentUpon>FirstPlace.cs</DependentUpon>
     </Compile>
+    <Compile Include="PointAddLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PointAddLogin.Designer.cs">
+      <DependentUpon>PointAddLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SecondPlace.cs">
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FirstPlace.resx">
       <DependentUpon>FirstPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PointAddLogin.resx">
+      <DependentUpon>PointAddLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
